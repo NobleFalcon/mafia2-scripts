@@ -61,10 +61,10 @@ local mafia_2_weapons = {
         ammo = 90
     },
 
-    MG42 = {
-        ID = 14 ,
-        ammo = 32
-    },
+--    MG42 = {
+--        ID = 14 ,
+--        ammo = 32
+--    },
 
     M1_Garand = {
         ID = 15 ,
