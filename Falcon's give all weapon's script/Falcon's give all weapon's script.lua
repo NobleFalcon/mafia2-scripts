@@ -84,12 +84,8 @@ local mafia_2_weapons = {
 
 
 function GiveGuns( table )
-    function AddWeapon( WeaponID, Ammo )
-        game.game:GetActivePlayer():InventoryAddWeapon( WeaponID, Ammo )
-    end
-
     for _, v in pairs( table ) do
-        AddWeapon( v["ID"], v["ammo"] )
+        game.game:GetActivePlayer():InventoryAddWeapon( v["ID"], v["ammo"] )
     end
 end
 
