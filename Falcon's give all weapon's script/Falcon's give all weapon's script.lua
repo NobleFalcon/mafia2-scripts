@@ -82,18 +82,19 @@ local mafia_2_weapons = {
     }
 }
 
-function AddWeapon( WeaponID, Ammo )
-    game.game:GetActivePlayer():InventoryAddWeapon( WeaponID, Ammo )
-end
 
-function GetAndGiveGuns( table )
+function GiveGuns( table )
+    function AddWeapon( WeaponID, Ammo )
+        game.game:GetActivePlayer():InventoryAddWeapon( WeaponID, Ammo )
+    end
+
     for _, v in pairs( table ) do
         AddWeapon( v["ID"], v["ammo"] )
     end
 end
 
 function RunWithDelay()
-    GetAndGiveGuns( mafia_2_weapons )
+    GiveGuns( mafia_2_weapons )
 end
 
 DelayBuffer:Insert( RunWithDelay, _, 250, 1, false )
