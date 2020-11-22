@@ -25,7 +25,7 @@ local mafia_2_weapons = {
         ammo = 36
     },
     
-    -- MK2_Frag_Grenade = {
+    -- MK2_Dummy_Frag_Grenade = {
     --     ID = 20,
     --     ammo = 5
     -- },
