@@ -1,5 +1,4 @@
 -- List does not contain MG42
--- ID Source https://wiki.mafia2-online.com/index.php?title=Weapons
 local mafia_2_weapons = {
     Model_12_Revolver = {
         ID = 2,
@@ -26,10 +25,10 @@ local mafia_2_weapons = {
         ammo = 36
     },
     
-    MK2_Frag_Grenade = {
-        ID = 7,
-        ammo = 5
-    },
+    -- MK2_Frag_Grenade = {
+    --     ID = 20,
+    --     ammo = 5
+    -- },
 
     Remington_Model_870_Field_gun = {
         ID = 8,
@@ -61,10 +60,10 @@ local mafia_2_weapons = {
         ammo = 90
     },
 
---    MG42 = {
---        ID = 14 ,
---        ammo = 32
---    },
+    -- MG42 = {
+    --     ID = 14 ,
+    --     ammo = 32
+    -- },
 
     M1_Garand = {
         ID = 15 ,
@@ -76,17 +75,26 @@ local mafia_2_weapons = {
         ammo = 30
     },
 
+    MK2_Frag_Grenade = {
+        ID = 20,
+        ammo = 5
+    },
+
     Molotov_Cocktail = {
         ID = 21,
         ammo = 5
     }
 }
 
+function AddWeapon( WeaponID, Ammo )
+    game.game:GetActivePlayer():InventoryAddWeapon( WeaponID, Ammo )
+end
 
-function GiveGuns()
+function giveGuns()
     for _, v in pairs( mafia_2_weapons ) do
-        game.game:GetActivePlayer():InventoryAddWeapon( v["ID"], v["ammo"] )
+        AddWeapon( v["ID"], v["ammo"] )
     end
 end
 
-DelayBuffer:Insert( GiveGuns, _, 250, 1, false )
+
+DelayBuffer:Insert( giveGuns, _, 250, 1, false )
