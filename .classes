@@ -1,0 +1,2247 @@
+class C_GameGuiScriptW
+
+ 
+
+game.gui:SetQuestionParameters( ? )
+
+game.gui:ShowMissionIntroScreen(“iD_texte1″,”iD_texte2″,”iD_texte3”)
+
+game.gui:ShowQuestionScreen2(“iD_texte0″,”iD_texte1″,1,”iD_texte2”,2)
+
+game.gui:ShowQuestionScreen3(“iD_texte0″,”iD_texte1″,1,”iD_texte2″,2,”iD_texte3”,3)
+
+game.gui:ShowQuestionScreen4(“iD_texte0″,”iD_texte1″,1,”iD_texte2″,2,”iD_texte3″,3,”iD_texte4”,4)
+
+game.gui:GetQuestionScreenAnswer()==1 or 2 or 3 or 4
+
+game.gui:DialogScreenShow2(“iD_texte1″,”iD_texte2”, 2,1)
+
+game.gui:GetQuestionScreenAnswer()==1 (for left reponse) or 2 (for right reponse)
+
+game.gui:TutorialDialogShow2(“13_tutorial.dds”,”iD_texte1″,”iD_texte2″, 2,1)
+
+game.gui:GetQuestionScreenAnswer()==1 (for left reponse) or 2 (for right reponse)
+
+game.gui:ShowQuestDialog(“gui_IMG”,”iD_texte1″,”iD_texte2″,”iD_texte3″)
+
+game.gui:GetQuestionScreenAnswer()==1 (for left reponse) or 2 (for right reponse)
+
+game.gui:IsTutorialModeEnabled( ? )
+
+game.gui:SetGameOverReasonId( ? )
+
+game.gui:GameEnd( ? )
+
+game.gui:GameEndFake( ? )
+
+game.gui:GameEnd( ? )
+
+game.gui:OpenMap(xx) xx = truefalse
+
+game.gui:UnlockArtworks(xx) xx = truefalse
+
+game.gui:QuestionScreenClose( ? )
+
+game.gui:RunCarcyclopedia(xx) xx = truefalse
+
+game.gui:Pause( ? )
+
+game.gui:DeactivateMainMenu( ? )
+
+game.gui:ActivateAPEXResults( ? )
+
+game.gui:ShowSecretCode( ? )
+
+game.gui:GameEndCutsceneSO( ? )
+
+ 
+
+ 
+
+class C_HudScriptW
+
+ 
+
+game.hud:Show(xx) xx = 01 enable oor Disable
+
+game.hud:RadarShow(xx) xx = truefalse enable oor Disable
+
+game.hud:ScoreShow(xx) xx = truefalse enable oor Disable
+
+game.hud:SubtitlesShow(xx) xx = truefalse enable oor Disable
+
+game.hud:SpeedometerShow(xx) xx = truefalse enable oor Disable
+
+game.hud:ActionButtonsShow(xx) xx = truefalse enable oor Disable Action Buttons Show on display
+
+game.hud:MessageAreaShow(xx) xx = truefalse enable oor Disable
+
+game.hud:InfoAreaShow(xx) xx = truefalse enable oor Disable
+
+game.hud:DarkPlaceIndicatorShow( ? ) enable oor Disable Montrer la Place noir indicateur
+
+game.hud:MessageShowQuick(“iD_texte”,#) #=delai en second
+
+game.hud:HelpHintShowQuick(“iD_texte”,#) #=delai en second
+
+game.hud:DebugHint( ? )
+
+game.hud:HelpHintHide( ? )
+
+game.hud:MoneyShow(xx) xx = truefalse
+
+game.hud:RespectShow( ? )
+
+game.hud:FaderFadeOut(250)
+
+game.hud:FaderFadeIn(250)
+
+game.hud:FaderFadeOutEx( ? )
+
+game.hud:FaderFadeInEx( ? )
+
+game.hud:PoliceWantedSet( ? )
+
+game.hud:PoliceRelationSet( ? )
+
+game.hud:TimerShow(xx) xx = truefalse enable oor Disable timer on display
+
+game.hud:TimerSet(##) #=delai en second
+
+game.hud:TimerStart() starts the timer counting down
+
+game.hud:TimerStop() disable the timer
+
+game.hud:TimerIsRunning( ? )
+
+game.hud:TimerGetDiffCoef( ? )
+
+game.hud:TimerGetTime( ? )
+
+game.hud:EffectAlcoholHit() initiates the effect that happens when you initially take a hit of alcohol
+
+game.hud:EffectAlcoholDrunk(##) ##=0..100 initiates the effect that happens when you are drunk
+
+game.hud:EffectAlcoholLimits( ? )
+
+game.hud:ShowLowHealthFX(xx) xx = truefalse initiates the effect that happens when you are hurt & you have low health
+
+game.hud:ForceSubtitlesUp( ? )
+
+game.hud:CreateHint(0,”iD_texte”,0,1,false) emplacement,”iD_texte”,icones ou Couleur,durÃÆÃÂ©e d’affichage,false
+
+game.hud:CreateHint(0,”iD_texte”,1,1,false)
+
+game.hud:CreateHint(0,”iD_texte”,2,1,false)
+
+game.hud:CreateHint(1,”iD_texte”,0,1,false)
+
+game.hud:CreateHint(1,”iD_texte”,1,1,false)
+
+game.hud:CreateHint(1,”iD_texte”,2,1,false)
+
+game.hud:CreateHint(1,”iD_texte”,3,1,false)
+
+game.hud:CreateHint(2,”iD_texte”,0,1,false)
+
+game.hud:CreateHint(2,”iD_texte”,1,1,false)
+
+game.hud:CreateHint(2,”iD_texte”,2,1,false)
+
+game.hud:CreateHint(2,”iD_texte”,3,1,false)
+
+game.hud:CreateHint(3,”iD_texte”,0,1,false)
+
+game.hud:CreateHint(4,”iD_texte”,0,1,false)
+
+game.hud:CreateHint(4,”iD_texte”,1,1,false)
+
+game.hud:CreateHint(4,”iD_texte”,2,1,false)
+
+game.hud:CreateHint(4,”iD_texte”,3,1,false)
+
+game.hud:DestroyHint( ? )
+
+game.hud:ShowHint( ? )
+
+game.hud:HideHint( ? )
+
+ 
+
+ 
+
+class C_NavigationScriptW
+
+ 
+
+game.navigation:SetMapResource(“map”) (“mapa_city”) (“mapa_prison”) (“mapa_residence”) (“mapa_triads”)
+
+game.navigation:RegisterObjectivePos(xx,yy, objective) ???
+
+game.navigation:RegisterObjectiveEntity( ? )
+
+game.navigation:RegisterObjectiveOnShop( ? )
+
+game.navigation:RegisterIconPos(“xx”,”yy”,IdIcon1,Idicon2,”2155010008″,true)
+
+game.navigation:RegisterIconEntity(“Joe”,0,10,”0062020002″,true)
+
+game.navigation:RegisterHumanEntity(“Joe”)
+
+game.navigation:UnregisterObjectivePos( ? )
+
+game.navigation:UnregisterObjectiveEntity( ? )
+
+game.navigation:UnregisterObjectiveOnShop( ? )
+
+game.navigation:ShowClosestBooth( ? )
+
+game.navigation:UnregisterIconPos( ? )
+
+game.navigation:UnregisterIconEntity(“Joe”,0,10,”3455000121″,true)
+
+game.navigation:UnregisterId( ? )
+
+game.navigation:GetIdByEntityName( ? )
+
+game.navigation:SetTargetForGPS(game.navigation:RegisterObjectivePos(xx,yy,objective)) ???
+
+game.navigation:SetFakeTargetForGPS( ? )
+
+game.navigation:GetTargetForGPS( ? )
+
+game.navigation:SetBackgroundColor( ? )
+
+game.navigation:SetBackgroundCustomColor( ? )
+
+game.navigation:SetBackgroundType( ? )
+
+game.navigation:GetBackgroundType( ? )
+
+game.navigation:SetForegroundColor( ? )
+
+game.navigation:SetForegroundCustomColor( ? )
+
+game.navigation:SetForegroundType( ? )
+
+game.navigation:GetForegroundType( ? )
+
+game.navigation:SetScale( ? )
+
+game.navigation:SetPos( ? )
+
+game.navigation:SetHeight( ? )
+
+game.navigation:GetHeight( ? )
+
+game.navigation:GetNearestShop( ? )
+
+game.navigation:GetNearestShopByType( ? )
+
+game.navigation:EnableFarVisibility( ? )
+
+game.navigation:DisableFarVisibility( ? )
+
+game.navigation:SetGPSGroup( ? )
+
+game.navigation:GetGPSGroup( ? )
+
+game.navigation:RegisterRtRIcon( ? )
+
+game.navigation:UnregisterRtRIcon( ? )
+
+game.navigation:UnregisterAllRtRIcons( ? )
+
+ 
+
+ 
+
+class C_WardrobeModule
+
+ 
+
+game.wardrobe:AddSuit(“VITPRA_COAT”,0,false) 0,1,2,3,4,5,6,7,8 or 9 = color dÃÆÃÂ©pend du model
+
+game.wardrobe:RemoveSuit( ? )
+
+game.wardrobe:RemoveAllSuits( ? )
+
+game.wardrobe:AddDLCSuits( ? )
+
+game.wardrobe:SetWanted( ? )
+
+game.wardrobe:ClearAllWanted( ? )
+
+ 
+
+ 
+
+class C_ScriptDataStorage
+
+ 
+
+game.datastore:IsVariableExist( ? )
+
+game.datastore:GetVariableType( ? )
+
+game.datastore:SetVariableTemporary( ? )
+
+game.datastore:IsVariableTemporary( ? )
+
+game.datastore:DelVariable( ? )
+
+game.datastore:ClearTemporaryVariables( ? )
+
+game.datastore:GetBool(“MafiaScene”)
+
+game.datastore:SetBool(“MafiaScene”,xx) xx=true/1
+
+game.datastore:GetNumber(“missionNumber”)
+
+game.datastore:SetNumber(“missionNumber”,100)
+
+game.datastore:GetString(“website”)
+
+game.datastore:SetString(“website”,”MafiaScene”)
+
+game.datastore:GetVector()
+
+game.datastore:GetGuid()
+
+game.datastore:SetVector( ? )
+
+game.datastore:SetGuid( ? )
+
+ 
+
+ 
+
+class C_ScriptCommandBuffer
+
+ 
+
+CommandBuffer:Insert(l_5_0,{function(l_1_0) end})
+
+CommandBuffer:Remove(name_fonction) ???
+
+CommandBuffer:IsInBuffer( ? )
+
+CommandBuffer:RemoveGroup( ? )
+
+CommandBuffer:SwitchDebugging( ? )
+
+ 
+
+ 
+
+class C_ScriptDelayBuffer
+
+ 
+
+DelayBuffer:Insert(function(l_1_0) end,{l_1_0},100,1,false)
+
+DelayBuffer:Remove(function(l_1_0) end,{l_1_0},100,1,false) ???
+
+DelayBuffer:IsInBuffer( ? )
+
+DelayBuffer:SwitchDebugging( ? )
+
+ 
+
+ 
+
+class C_LuaMatrix http://lua-users.org/wiki/LuaMatrix https://github.com/davidm/lua-matrix/bl … matrix.lua
+
+ 
+
+??? ?:setPos( ? )
+
+??? ?:addPos( ? )
+
+??? ?:zero( ? )
+
+??? ?:setDir( ? )
+
+??? ?:setDirUp( ? )
+
+??? ?:setRotEuler( ? )
+
+ 
+
+ 
+
+class C_LuaQuat
+
+ 
+
+??? ?:zero( ? )
+
+??? ?:makeMatrix( ? )
+
+??? ?:normalize( ? )
+
+ 
+
+ 
+
+class C_MathLuaModule
+
+ 
+
+Math:newVector(xx,yy,zz)
+
+Math:newMatrix( ? )
+
+Math:newQuat( ? )
+
+Math:Random(1,5) Chiffre alÃÆÃÂ©atoire ici de 1 a 5
+
+ 
+
+ 
+
+class C_ShopMenuScript
+
+ 
+
+game.shop:OpenShopMenu( ? )
+
+game.shop:OpenShopMenuOnFrame( ? )
+
+game.shop:CloseOpenedMenu( ? )
+
+game.shop:HideModelInItem( ? )
+
+game.shop:IsShopActivated( ? )
+
+game.shop:GetActiveShopBaseFrameName( ? )
+
+game.shop:SetFlagInActiveShop( ? )
+
+game.shop:GetFlagInActiveShop( ? )
+
+game.shop:SetActiveShopState( ? )
+
+game.shop:GetActiveShopState( ? )
+
+game.shop:SetActiveShopExplored( ? )
+
+game.shop:SetShopExplored( ? )
+
+game.shop:SetAllShopExplored() Display all shops on the map
+
+game.shop:SetMenuItemEnable( ? )
+
+game.shop:SetMenuItemVisible( ? )
+
+game.shop:SetMenuItemPrice( ? )
+
+game.shop:ShowItem( ? )
+
+game.shop:SetPlayerMoneyVisible( ? )
+
+game.shop:SetPlayerWantedStatusVisible( ? )
+
+game.shop:SetCarWantedStatusVisible( ? )
+
+game.shop:SetTuningLevel( ? )
+
+game.shop:SetActiveCar( ? )
+
+game.shop:IsEntityOwnedByShop( ? )
+
+game.shop:UTTShopStart( ? )
+
+game.shop:UTTShopEnd( ? )
+
+game.shop:UTTShopPurchase( ? )
+
+game.shop:UTTShopCrime( ? )
+
+game.shop:UTTShopMoneyRobbed( ? )
+
+ 
+
+ 
+
+class C_ScriptWrapperGame
+
+ 
+
+game.game:GetActivePlayer()
+
+game.game:GetMissionTime( ? )
+
+game.game:CreateScriptActorAction( ? )
+
+game.game:CreateScriptActorActionBox( ? )
+
+game.game:CreateFoodActorAction( ? )
+
+game.game:CreateSuitActorAction( ? )
+
+game.game:CreateWeaponActorAction( ? )
+
+game.game:CreateAmmoActorAction( ? )
+
+game.game:CreateCleanEntity( ? )
+
+game.game:CreateBlocker( ? )
+
+game.game:DisableTranslocator(xx) xx = truefalse Load or unload trees, columns, containers, signs, telephone booths, fences …
+
+game.game:PlayMusic(“m04_Escape_music”,true,1,1,1)
+
+game.game:StopMusic(“m04_Escape_music”,true,1,1,1)
+
+game.game:SoundFadeIn(250)
+
+game.game:SoundFadeOut(250)
+
+game.game:SaveGame(1)
+
+game.game:IsSaveLoadDisabled( ? )
+
+game.game:GetSaveGameSyncObject()
+
+game.game:AwardMedal(enums.Medals.NIGHT_SHIFT) ???
+
+game.game:AwardDLCMedal( ? )
+
+game.game:CountStatisticItem(##)
+
+game.game:AddScore(true,1000) (bool, int amount) list model(VITKSL2,VITNAH_T,VITSPO,……)
+
+game.game:SetCurrentStoryId( ? )
+
+game.game:LodingFinishedNotify( ? )
+
+game.game:DbgToolActorInfo( ? )
+
+game.game:IsDeadHumanInside( ? )
+
+game.game:ChangePlayerModel(“vitvez”,-1) (string ModelName, integer colorID)
+
+game.game:ChangePlayerModelByShopID( ? )
+
+game.game:GetPlayerModelShopID( ? )
+
+game.game:MassActivate( ? )
+
+game.game:MassDeactivate( ? )
+
+game.game:LeadrboardsQuestStart( ? )
+
+game.game:LeadrboardsQuestEnd( ? )
+
+game.game:LeadrboardsQuestCancel( ? )
+
+game.game:LeadrboardsWriteCityOverall( ? )
+
+game.game:RtRQuestStart( ? )
+
+game.game:RtRQuestEnd( ? )
+
+game.game:RtRQuestCancel( ? )
+
+game.game:UpdatePresenceParam( ? )
+
+game.game:UpdatePresenceMessage( ? )
+
+game.game:UpdateDLCPresence( ? )
+
+game.game:AtsSignal( ? )
+
+game.game:IsPointInView( ? )
+
+game.game:GetPlatform( ? )
+
+game.game:SkipLoadingSavingIndicatorDelay( ? )
+
+ 
+
+ 
+
+class C_ScriptWrapperSDS
+
+ 
+
+game.sds:ActivateStreamMapLine(“name_MapLine”)
+
+game.sds:GetSyncObjectForLoadSDS( ? ) (“vitoa3city”) prisoninterier prisonexterier ???
+
+game.sds:GetSyncObjectForUnloadSDS( ? )
+
+game.sds:LoadCityShop( ? )
+
+game.sds:ReleaseCityShop( ? )
+
+game.sds:LoadCityPart( ? )
+
+game.sds:ReleaseCityPart( ? )
+
+ 
+
+ 
+
+class C_ScriptWrapperTraffic
+
+ 
+
+game.traffic:SwitchGenerators(xx) xx = truefalse
+
+game.traffic:Populate(##) ##=0..100
+
+game.traffic:PoliceReinforcements(##) ##=0..100
+
+game.traffic:OpenSeason(50) or (140)
+
+game.traffic:CloseSeason()
+
+game.traffic:SetPolice(xx) xx = truefalse sets whether or not police car traffic should exit
+
+game.traffic:DespawnPolice(xx) xx = truefalse
+
+game.traffic:SwitchRoad(Math:newVector(xx,yy,zz),false) false bloc circulation true debloc
+
+game.traffic:SwitchFarAmbient( ? )
+
+game.traffic:SetNumCars(##) ##=0..100
+
+game.traffic:SetNumStaticCars(##) ##=0..100
+
+game.traffic:SetNoAmbientRadius( ? )
+
+game.traffic:SetFarAmbientRadius( ? )
+
+game.traffic:PathFindEnableMiddlePoint( ? )
+
+game.traffic:PathFindReset( ? )
+
+ 
+
+ 
+
+class C_ScriptWrapperRadio
+
+ 
+
+game.radio:SetContent(“Empire”,”all”,”Empire_07010″) (“Empire”,”all”,”Empire_02004″)
+
+(“Classic”,”all”,”Classic_07010″) (“Classic”,”all”,”Classic_02004″)
+
+(“Delta”,”all”,”Delta_07010″) (“Delta”,”all”,”Delta_02004″)
+
+game.radio:ForceDefaultStation(“Empire”) or (“Classic”) or (“Delta”) Switch radio station
+
+game.radio:SwitchPlayerStation(“Empire”)
+
+game.radio:TurnPlayerRadioOn(true)
+
+game.radio:TurnPlayerRadioOff(true)
+
+game.radio:IsPlayerRadioOn()
+
+game.radio:FadePlayerRadioOut(##) ##=delai en miliseconds Fade out the radio
+
+game.radio:SetDialogMode( ? )
+
+game.radio:AdvanceTime() Switches to the next song
+
+ 
+
+ 
+
+class C_RelationShipsScriptWrapper
+
+ 
+
+ai.relationships:SetRelationship(enums.AI_SIDE.NEUTRAL, enums.AI_TYPE.SELLER, enums.AI_SIDE.PLAYER, enums.AI_TYPE.FRIEND, 10)
+
+(enums.AI_SIDE.NEUTRAL, enums.AI_TYPE.SELLER, enums.AI_SIDE.PLAYER, enums.AI_TYPE.FRIEND, 0)
+
+ai.relationships:GetRelationship( ? )
+
+ai.relationships:SetPlayerAggressivity( ? )
+
+ai.relationships:CreateGangGroup( ? )
+
+ai.relationships:DestroyGangGroup( ? )
+
+ai.relationships:AddGroupMember( ? )
+
+ai.relationships:RemoveGroupMember( ? )
+
+ai.relationships:IsPlayerAttacked( ? )
+
+ai.relationships:IsPlayerAttackedRanged( ? )
+
+ai.relationships:ForgetPlayer( ? )
+
+ai.relationships:IgnorePlayer( ? )
+
+ai.relationships:ForgetHuman( ? )
+
+ 
+
+ 
+
+class C_PoliceWrapper
+
+ 
+
+ai.police:CreateOffence(38,player:GetGuid())
+
+ai.police:DeactivateOffence( ? )
+
+ai.police:DeactivateAllOffences( ? )
+
+ai.police:IgnorePerson(game.game:GetActivePlayer():GetGuid(),xx) xx = truefalse
+
+ai.police:IgnoreRecognition( ? )
+
+ai.police:SetDensity(0)
+
+ai.police:GetDensity( ? )
+
+ai.police:SetDensityMax(0)
+
+ai.police:SetKnownPerson( ? )
+
+ai.police:IsPersonKnown( ? )
+
+ai.police:SetKnownCar( ? )
+
+ai.police:ClearKnownCars() Removes wanted license plate from all vehicles, must be clear of police radar in order to clear the one you are driving
+
+ai.police:IsCarKnown( ? )
+
+ai.police:HasActiveOffence( ? )
+
+ai.police:IsInSearchMode( ? )
+
+ai.police:StopCloseCombat( ? )
+
+ai.police:StopCarSearch( ? )
+
+ai.police:TurnPoliceTutorial( ? )
+
+ai.police:SolveOffence( ? )
+
+ai.police:SetRoadBlockStatus( ? )
+
+ai.police:GetRoadBlockStatus( ? )
+
+ai.police:CreateRoadBlockSpeech( ? )
+
+ai.police:NabonzujPlayera( ? )
+
+ai.police:SetActionDone( ? )
+
+ai.police:GetNumberOfPolicemenInAction( ? )
+
+ai.police:GetFineValue( ? )
+
+ai.police:PoliceUTTWriteSimple( ? )
+
+ 
+
+ 
+
+class C_WrappersList
+
+ 
+
+game.entitywrapper:GetEntityByGUID( ? ) (l_2_1:GetCorpseGUID()):EnableDragBody(true)
+
+game.entitywrapper:GetEntityByName(“name_entity”)
+
+ 
+
+ 
+
+class C_WrapperCar : public C_WrapperActor — game.game:GetActivePlayer():GetOwner() or game.entitywrapper:GetEntityByName(“name_car_entity”)
+
+ 
+
+game.game:GetActivePlayer():GetOwner():SetSpeed( 100 ) ## integer
+
+game.game:GetActivePlayer():GetOwner():GetSpeed( ? )
+
+game.game:GetActivePlayer():GetOwner():GetSpeedFloat( ? )
+
+game.game:GetActivePlayer():GetOwner():GetSpeedLimiter( ? )
+
+game.game:GetActivePlayer():GetOwner():SetSpeedLimiter( ? )
+
+game.game:GetActivePlayer():GetOwner():SetSpeedLimiterSpeed( ? )
+
+game.game:GetActivePlayer():GetOwner():GetSpeedLimiterSpeed( ? )
+
+game.game:GetActivePlayer():GetOwner():SetMaxAISpeed( ? )
+
+game.game:GetActivePlayer():GetOwner():GetDamage( ? )
+
+game.game:GetActivePlayer():GetOwner():GetMotorDamage( ? )
+
+game.game:GetActivePlayer():GetOwner():SetMotorDamage( 0 ) ##  int( 0-100 )
+
+game.game:GetActivePlayer():GetOwner():Repair(xx) xx = boolean
+
+game.game:GetActivePlayer():GetOwner():RepairAndClear(xx) xx = boolean
+
+game.game:GetActivePlayer():GetOwner():GetRepairPrice( ? )
+
+game.game:GetActivePlayer():GetOwner():SetCarDamage( ? )
+
+game.game:GetActivePlayer():GetOwner():GetActualTuningTable( ? )
+
+game.game:GetActivePlayer():GetOwner():SetActualTuningTable(0) array[0, 1, 2, 3]
+
+game.game:GetActivePlayer():GetOwner():HasTuningTable( ? )
+
+game.game:GetActivePlayer():GetOwner():HasTuningFlag( ? )
+
+game.game:GetActivePlayer():GetOwner():HasTableFlag( ? )
+
+game.game:GetActivePlayer():GetOwner():HasRacingFlag( ? )
+
+game.game:GetActivePlayer():GetOwner():GetPrice( ? )
+
+game.game:GetActivePlayer():GetOwner():AddSpendedMoney( ? )
+
+game.game:GetActivePlayer():GetOwner():Lock() voiture ne peut pas bouger
+
+game.game:GetActivePlayer():GetOwner():Unlock()
+
+game.game:GetActivePlayer():GetOwner():LockEntryPoints() Verrouiller les points d’entrÃÆÃÂ©e
+
+game.game:GetActivePlayer():GetOwner():UnlockEntryPoints() Deverrouiller les points d’entrÃÆÃÂ©e
+
+game.game:GetActivePlayer():GetOwner():LockPlayerEntryPoints()
+
+game.game:GetActivePlayer():GetOwner():UnlockPlayerEntryPoints()
+
+game.game:GetActivePlayer():GetOwner():FakePlayerCar( ? )
+
+game.game:GetActivePlayer():GetOwner():OpenHood()
+
+game.game:GetActivePlayer():GetOwner():CloseHood()
+
+game.game:GetActivePlayer():GetOwner():OpenTrunk()
+
+game.game:GetActivePlayer():GetOwner():CloseTrunk()
+
+game.game:GetActivePlayer():GetOwner():LockTrunks()
+
+game.game:GetActivePlayer():GetOwner():UnlockTrunks()
+
+game.game:GetActivePlayer():GetOwner():OpenBusDoors( ? )
+
+game.game:GetActivePlayer():GetOwner():SetDoorFree( ? )
+
+game.game:GetActivePlayer():GetOwner():SetDirty(##) ##=0/0.1/…./0.9/1
+
+game.game:GetActivePlayer():GetOwner():GetDirty( ? )
+
+game.game:GetActivePlayer():GetOwner():HideGore( ? )
+
+game.game:GetActivePlayer():GetOwner():HideDecals( ? )
+
+game.game:GetActivePlayer():GetOwner():SetColor(##,##) ##=1…40
+
+game.game:GetActivePlayer():GetOwner():GetColor( ? )
+
+game.game:GetActivePlayer():GetOwner():GetActualFuel()
+
+game.game:GetActivePlayer():GetOwner():SetActualFuel(##) ##=0…100
+
+game.game:GetActivePlayer():GetOwner():GetFuelTankCapacity( ? )
+
+game.game:GetActivePlayer():GetOwner():SetEngineOn(xx,yy) xx = truefalse yy = truefalse
+
+game.game:GetActivePlayer():GetOwner():Spawn( ? )
+
+game.game:GetActivePlayer():GetOwner():SetHandbrake( ? )
+
+game.game:GetActivePlayer():GetOwner():SetBrake( ? )
+
+game.game:GetActivePlayer():GetOwner():SetPower( ? )
+
+game.game:GetActivePlayer():GetOwner():SetAddSteer(##) ##=-100…0…100
+
+game.game:GetActivePlayer():GetOwner():GetEngineRotations( ? )
+
+game.game:GetActivePlayer():GetOwner():CreateController(“car_escaper”) (“car_hunter”) (“car_police”) (“car_scripted”)
+
+game.game:GetActivePlayer():GetOwner():DestroyController()
+
+game.game:GetActivePlayer():GetOwner():InitializeAIParams(enums.CarAIProfile.PIRATE,0) 0,1/../4 SLOW enums.CarAIProfile.AGGRESSIVE NORMAL
+
+game.game:GetActivePlayer():GetOwner():HuntCar(game.entitywrapper:GetEntityByName(“name_car_entity”))
+
+game.game:GetActivePlayer():GetOwner():HuntMode(enums.CarHuntMode.ALONG)
+
+game.game:GetActivePlayer():GetOwner():HuntPause( ? )
+
+game.game:GetActivePlayer():GetOwner():MoveTo(Math:newVector(xx,yy,zz),START) (Math:newVector(xx,yy,zz),enums.MoveToUTurn.NOUTURN,enums.MoveToPass.BRAKE)enums.MoveToPass.PASS)enums.MoveToPass.STOP)
+
+game.game:GetActivePlayer():GetOwner():EnableAccidentReaction( ? )
+
+game.game:GetActivePlayer():GetOwner():FollowTrail( ? )
+
+game.game:GetActivePlayer():GetOwner():FollowTrailReverse( ? )
+
+game.game:GetActivePlayer():GetOwner():EscapeMode()
+
+game.game:GetActivePlayer():GetOwner():Wander( ? )
+
+game.game:GetActivePlayer():GetOwner():WaitForEntity(Joe,30,60)
+
+game.game:GetActivePlayer():GetOwner():CancelWaitForEntity( ? )
+
+game.game:GetActivePlayer():GetOwner():GetWheelPos( ? )
+
+game.game:GetActivePlayer():GetOwner():SetWheel( ? )
+
+game.game:GetActivePlayer():GetOwner():GetWheel( ? )
+
+game.game:GetActivePlayer():GetOwner():SetTyre( ? )
+
+game.game:GetActivePlayer():GetOwner():RegisterEvents(true)
+
+game.game:GetActivePlayer():GetOwner():GetPointW( ? ) Voir si il y a un raport avec Waypoint
+
+game.game:GetActivePlayer():GetOwner():GetSeatAIPosW( ? ) Voir si il y a un raport avec Waypoint
+
+game.game:GetActivePlayer():GetOwner():GetProhibitGarage( ? )
+
+game.game:GetActivePlayer():GetOwner():SetProhibitGarage( ? )
+
+game.game:GetActivePlayer():GetOwner():Explode() Boum
+
+game.game:GetActivePlayer():GetOwner():FindSeatForHuman( ? )
+
+game.game:GetActivePlayer():GetOwner():SetPainting(“Model_name”) HotRod-TEXT-1,HotRod-TEXT-2,HotRod-TEXT-3,HotRod-cucky a stin2,HotRod-cucky a stin4,HotRod-jehly2,HotRod-plameny3,HotRod-plameny5
+
+game.game:GetActivePlayer():GetOwner():GetPainting( ? )
+
+game.game:GetActivePlayer():GetOwner():SetResistance(##) ## = 0/…/100
+
+game.game:GetActivePlayer():GetOwner():GetResistance( ? )
+
+game.game:GetActivePlayer():GetOwner():DisableExplosion(xx) xx = truefalse Makes a car so that it may or may not be capable of exploding
+
+game.game:GetActivePlayer():GetOwner():IsDisableExplosion( ? )
+
+game.game:GetActivePlayer():GetOwner():SetBeaconLightOn(xx) xx = truefalse
+
+game.game:GetActivePlayer():GetOwner():SetSirenOn(xx) xx = truefalse
+
+game.game:GetActivePlayer():GetOwner():SetHornOn(xx) xx = truefalse
+
+game.game:GetActivePlayer():GetOwner():SetRadioDefaultState(“name_radio”,false)
+
+game.game:GetActivePlayer():GetOwner():SetSPZText(“text”,true)
+
+game.game:GetActivePlayer():GetOwner():GetSPZText( ? )
+
+game.game:GetActivePlayer():GetOwner():GetCarProblem(#) # = 0/…./8
+
+game.game:GetActivePlayer():GetOwner():FixCarPos( ? )
+
+game.game:GetActivePlayer():GetOwner():IsCarPosFixed( ? )
+
+game.game:GetActivePlayer():GetOwner():SetOffPart( ? )
+
+game.game:GetActivePlayer():GetOwner():SetOnPart( ? )
+
+game.game:GetActivePlayer():GetOwner():GetPartCount( ? )
+
+game.game:GetActivePlayer():GetOwner():GetPartName( ? )
+
+game.game:GetActivePlayer():GetOwner():GetPartByName( ? )
+
+game.game:GetActivePlayer():GetOwner():SetWheelsProtected(xx) xx = truefalse
+
+game.game:GetActivePlayer():GetOwner():IsWheelsProtected( ? )
+
+game.game:GetActivePlayer():GetOwner():OpenSeatWindowOpenSeatWindow(1,xx,0) 1,2,3 or 4 xx = truefalse
+
+game.game:GetActivePlayer():GetOwner():IsSeatWindowOpen( ? )
+
+game.game:GetActivePlayer():GetOwner():GetActualPlayerSeatIndex( ? )
+
+game.game:GetActivePlayer():GetOwner():ReflectorsForceOff( ? )
+
+game.game:GetActivePlayer():GetOwner():GetCarTableId( ? )
+
+game.game:GetActivePlayer():GetOwner():DisableFreeTrunk( ? )
+
+game.game:GetActivePlayer():GetOwner():PlayAnim( ? )
+
+game.game:GetActivePlayer():GetOwner():StopAnim( ? )
+
+game.game:GetActivePlayer():GetOwner():RevUpEffectStart( ? )
+
+game.game:GetActivePlayer():GetOwner():RevUpEffectStop( ? )
+
+game.game:GetActivePlayer():GetOwner():FadeDirtyEffectStart( ? )
+
+game.game:GetActivePlayer():GetOwner():FadeDirtyEffectStop( ? )
+
+game.game:GetActivePlayer():GetOwner():FadeSnowEffectStart( ? )
+
+game.game:GetActivePlayer():GetOwner():FadeSnowEffectStop( ? )
+
+game.game:GetActivePlayer():GetOwner():FadeFuelEffectStart( ? )
+
+game.game:GetActivePlayer():GetOwner():FadeFuelEffectStop( ? )
+
+game.game:GetActivePlayer():GetOwner():SPZAdjustingEffectStart( ? )
+
+game.game:GetActivePlayer():GetOwner():SPZAdjustingEffectSet( ? )
+
+game.game:GetActivePlayer():GetOwner():SPZAdjustingEffectStop( ? )
+
+game.game:GetActivePlayer():GetOwner():DisableObstacleByPart( ? )
+
+game.game:GetActivePlayer():GetOwner():SetDespawnImmunity( ? )
+
+game.game:GetActivePlayer():GetOwner():MarkForSale( ? )
+
+game.game:GetActivePlayer():GetOwner():IsMarkedForSale( ? )
+
+game.game:GetActivePlayer():GetOwner():UTTCarRepair( ? )
+
+game.game:GetActivePlayer():GetOwner():UTTCarUpgrade( ? )
+
+game.game:GetActivePlayer():GetOwner():UTTCarWheelChange( ? )
+
+game.game:GetActivePlayer():GetOwner():UTTCarPaint( ? )
+
+game.game:GetActivePlayer():GetOwner():UTTCarAirbrush( ? )
+
+game.game:GetActivePlayer():GetOwner():UTTCarPlateChange( ? )
+
+game.game:GetActivePlayer():GetOwner():LinkToEntity( ? )
+
+game.game:GetActivePlayer():GetOwner():UnlinkFromEntity( ? )
+
+ 
+
+ 
+
+class C_WrapperHuman : public C_WrapperActor — game.game:GetActivePlayer() or game.entitywrapper:GetEntityByName(“name_Human_entity”)
+
+ 
+
+game.game:GetActivePlayer().nonplayerdamage = 100
+
+game.game:GetActivePlayer():DoTalk( ? ) game.entitywrapper:GetEntityByName(“Henry”):DoTalk(henry,”0599050100″) ???
+
+game.game:GetActivePlayer():DoTalkAI(“StreetTalk”..i)
+
+game.game:GetActivePlayer():BlockSpeech( ? )
+
+game.game:GetActivePlayer():ShutUp( ? )
+
+game.game:GetActivePlayer():GetSpeechSituationsCount( ? )
+
+game.game:GetActivePlayer():AnimPlay(“name_anim”, false)
+
+game.game:GetActivePlayer():AnimIsFinished( ? )
+
+game.game:GetActivePlayer():AnimStop( ? )
+
+game.game:GetActivePlayer():AnimPlayEffect(“sc_joe_car_calming_diff”, true) ??? ?
+
+game.game:GetActivePlayer():AnimEffectStop( ? )
+
+game.game:GetActivePlayer():AnimPlaySync( ? )
+
+game.game:GetActivePlayer():AnimPlayDummy( ? )
+
+game.game:GetActivePlayer():SetAnimStyle(“melee”,”default”) (“panic”,”default”) (“common”,”default”) & more
+
+game.game:GetActivePlayer():GetOppositePosRot( ? )
+
+game.game:GetActivePlayer():InventoryAddWeapon(Id, xxx) xxx=Ammo
+
+game.game:GetActivePlayer():InventoryAddAmmo(Id, xxx) xxx=Ammo
+
+game.game:GetActivePlayer():InventoryAddItem(Id)
+
+game.game:GetActivePlayer():InventoryAddItems( ? )
+
+game.game:GetActivePlayer():InventoryGetSelected()
+
+game.game:GetActivePlayer():InventorySelect(iD,false) Forces a player to select the specified inventory item and bring it to hand.
+
+game.game:GetActivePlayer():InventoryArmed( ? )
+
+game.game:GetActivePlayer():InventoryHolster( ? )
+
+game.game:GetActivePlayer():InventoryRemoveWeapon(Id, xxx) xxx=Ammo
+
+game.game:GetActivePlayer():InventoryRemoveAmmo(Id, xxx) xxx=Ammo
+
+game.game:GetActivePlayer():InventoryRemoveItem(Id)
+
+game.game:GetActivePlayer():InventoryHaveWeapon( ? )
+
+game.game:GetActivePlayer():InventoryCanAddWeapon( ? )
+
+game.game:GetActivePlayer():InventoryCanAddAmmo( ? )
+
+game.game:GetActivePlayer():InventoryHowMuchAmmoCanAdd( ? )
+
+game.game:GetActivePlayer():InventoryHaveItem( ? )
+
+game.game:GetActivePlayer():InventoryDrop() lacher arme
+
+game.game:GetActivePlayer():InventorySetUnlimitedAmmo(xx) xx = truefalse
+
+game.game:GetActivePlayer():InventoryGetMoney()
+
+game.game:GetActivePlayer():InventoryAddMoney(###)
+
+game.game:GetActivePlayer():InventoryRemoveMoney(###)
+
+game.game:GetActivePlayer():InventoryReload( ? )
+
+game.game:GetActivePlayer():HaveEmptyHand( ? )
+
+game.game:GetActivePlayer():HaveFireWeaponInHand( ? )
+
+game.game:GetActivePlayer():HaveColdWeaponInHand( ? )
+
+game.game:GetActivePlayer():HaveThrowingWeaponInHand( ? )
+
+game.game:GetActivePlayer():ClearItemsInHands( ? )
+
+game.game:GetActivePlayer():ThrowItem( ? )
+
+game.game:GetActivePlayer():ThrowMolotov( ? )
+
+game.game:GetActivePlayer():ThrowGrenade( ? )
+
+game.game:GetActivePlayer():MoveEnt(game.entitywrapper:GetEntityByName(“C_item”),”WALK”) or “RUN”
+
+game.entitywrapper:GetEntityByName(“name_Human_entity”):MoveEnt(game.entitywrapper:GetEntityByName(“C_item”),”WALK”) or “RUN”
+
+MoveEnt(game.entitywrapper:GetEntityByName(“name_other_entity”), “RUN”, game.entitywrapper:GetEntityByName(“name_other_entity”):GetDir())
+
+game.game:GetActivePlayer():MoveVec(Math:newVector(xx,yy,zz),”WALK”) or “RUN” seulement sur de courte distance Player:SetControlStyle(enums.ControlStyle.LOCKED) Player:LockControls(true)
+
+game.game:GetActivePlayer():MoveNav( ? )
+
+game.game:GetActivePlayer():SetMoveAnimEntityCyl( ? )
+
+game.game:GetActivePlayer():SetMoveAnimEntity( ? )
+
+game.game:GetActivePlayer():ResetMoveEndPosDir( ? )
+
+game.game:GetActivePlayer():SetMoveEndPosDir( ? )
+
+game.game:GetActivePlayer():SetLookPointOfInterest(xx) xx = truefalse
+
+game.game:GetActivePlayer():IsLookPointOfInterest( ? )
+
+game.game:GetActivePlayer():RegisterFollower( ? )
+
+game.game:GetActivePlayer():UnregisterFollower( ? )
+
+game.game:GetActivePlayer():SetFollowSprintDistanceTreshold( ? )
+
+game.game:GetActivePlayer():CoverFollow( ? )
+
+game.game:GetActivePlayer():CoverFollowBattle( ? )
+
+game.game:GetActivePlayer():CoverFollowOffset( ? )
+
+game.game:GetActivePlayer():Follow(Player,”RUN”,2,4,true)
+
+game.game:GetActivePlayer():FollowBattle(Player,”RUN”,2,3,4) ???
+
+game.game:GetActivePlayer():FollowOffset( ? )
+
+game.game:GetActivePlayer():MoveToArea( ? )
+
+game.game:GetActivePlayer():EnableSuspiciousMove( ? )
+
+game.game:GetActivePlayer():DisableSuspiciousMove( ? )
+
+game.game:GetActivePlayer():SetCanTraverse( ? )
+
+game.game:GetActivePlayer():GetCanTraverse( ? )
+
+game.game:GetActivePlayer():ScriptControl( ? )
+
+game.game:GetActivePlayer():PanicCrouch(0) 0,…,4
+
+game.game:GetActivePlayer():PanicRunAway(player:GetPos(),player:GetPos())
+
+Joe=game.entitywrapper:GetEntityByName(“Joe”) Joe:PanicRunAway(Joe:GetPos(),Joe:GetPos())
+
+game.game:GetActivePlayer():IsDeath() if PlayerIsDeath() ou entity:IsDeath() then end
+
+game.game:GetActivePlayer():DespawnImmunity( ? )
+
+game.game:GetActivePlayer():TakeBody( ? )
+
+game.game:GetActivePlayer():DropBody( ? )
+
+game.game:GetActivePlayer():ModelToHands(true,-1,22) (true,1 pour main droite 2 pour main gauche, objet de 2 a 120)
+
+game.game:GetActivePlayer():ModelToMouth( ? )
+
+game.game:GetActivePlayer():RegisterActorItem( ? )
+
+game.game:GetActivePlayer():UnregisterActorItem( ? )
+
+game.game:GetActivePlayer():UnregisterActorItems( ? )
+
+game.game:GetActivePlayer():IsActorItemRegistered( ? )
+
+game.game:GetActivePlayer():ActorItemToHands( ? )
+
+game.game:GetActivePlayer():EnableInjury(xx) xx = truefalse
+
+game.game:GetActivePlayer().invulnerability = true
+
+game.game:GetActivePlayer():EnableInjuryDiff( ? )
+
+game.game:GetActivePlayer():HasFlag( ? )
+
+game.game:GetActivePlayer():HasFlags( ? )
+
+game.game:GetActivePlayer():GetAIType( ? )
+
+game.game:GetActivePlayer():UseAB( ? )
+
+game.game:GetActivePlayer():IgnoreCollision( ? )
+
+game.game:GetActivePlayer():GetPhysState()
+
+game.game:GetActivePlayer():SetPhysState(enums.PhysicsState.DYNAMIC) or ENABLE or DISABLED or KINEMATIC (Pour passer a travers les objets)
+
+game.game:GetActivePlayer():SetPhysStandCollPriority( ? )
+
+game.game:GetActivePlayer():SitOnMG42( ? )
+
+game.game:GetActivePlayer():LeaveMG42( ? )
+
+game.game:GetActivePlayer():ChangeModel( ? )
+
+game.game:GetActivePlayer():HasModel( ? )
+
+game.game:GetActivePlayer():ShowHat( ? )
+
+game.game:GetActivePlayer():DropHat( ? )
+
+game.game:GetActivePlayer():MakeCarOwnership() or (game.entitywrapper:GetEntityByName(“name_Car_entity”))
+
+game.game:GetActivePlayer():GetInOutCar(game.entitywrapper:GetEntityByName(“name_Car_entity”),z,xx,yy) z = 1,2,3 or 4 xx = truefalse yy = truefalse
+
+game.game:GetActivePlayer():GetOutCarFast(xx) xx = truefalse
+
+game.game:GetActivePlayer():FollowTeleportOnDist( ? )
+
+game.game:GetActivePlayer():FollowTeleportOnFail( ? )
+
+game.game:GetActivePlayer():FollowTeleportRanges( ? )
+
+game.game:GetActivePlayer():SetAIVision( ? )
+
+game.game:GetActivePlayer():SetDirtBlend( ? )
+
+game.game:GetActivePlayer():Attack(game.entitywrapper:GetEntityByName(“name_Human_entity”)) or game.entitywrapper:GetEntityByName(“name_Human_entity”):Attack(Player) (Player,”RUN”,2,4,true)
+
+game.game:GetActivePlayer():SetCarAttackPermission(xx) xx = truefalse
+
+game.game:GetActivePlayer():SetCarAttackGetOutPermission(xx) xx = truefalse
+
+game.game:GetActivePlayer():SetBattleShootingImportance( ? )
+
+game.game:GetActivePlayer():EnableAttackFromAnim( ? )
+
+game.game:GetActivePlayer():SearchSound( ? )
+
+game.game:GetActivePlayer():SearchTarget( ? )
+
+game.game:GetActivePlayer():HoldFire( ? )
+
+game.game:GetActivePlayer():FreeFire( ? )
+
+game.game:GetActivePlayer():HoldCloseCombat( ? )
+
+game.game:GetActivePlayer():FreeCloseCombat( ? )
+
+game.game:GetActivePlayer():Fightguard( ? )
+
+game.game:GetActivePlayer():CoverFightguard( ? )
+
+game.game:GetActivePlayer():SetFightInStand( ? )
+
+game.game:GetActivePlayer():SetFightInCrouch( ? )
+
+game.game:GetActivePlayer():SetAttackMode( ? )
+
+game.game:GetActivePlayer():TakeCover( ? )
+
+game.game:GetActivePlayer():TakeCoverAdvanced( ? )
+
+game.game:GetActivePlayer():TakeCoverAdvancedID(“6881730”, enums.CoverSide.LEFT, “6881520”, enums.CoverSide.RIGHT, 0, true) ???
+
+(“6881592”, enums.CoverSide.RIGHT, “6881567”, enums.CoverSide.RIGHT, 0, true) ???
+
+(“6881604”, enums.CoverSide.RIGHT, “6881634”, enums.CoverSide.LEFT, 0, true) ???
+
+(“6881634”, enums.CoverSide.LEFT, “6881619”, enums.CoverSide.LEFT, 0, true) ???
+
+game.game:GetActivePlayer():IsInCover( ? )
+
+game.game:GetActivePlayer():AddThreat( ? )
+
+game.game:GetActivePlayer():ShootAt( ? )
+
+game.game:GetActivePlayer():ShootEffect( ? )
+
+game.game:GetActivePlayer():ShootSimulation( ? )
+
+game.game:GetActivePlayer():Aim( ? )
+
+game.game:GetActivePlayer():AimAt( ? )
+
+game.game:GetActivePlayer():LookAt( ? )
+
+game.game:GetActivePlayer():LookAtDir( ? )
+
+game.game:GetActivePlayer():LookAtAngles( ? )
+
+game.game:GetActivePlayer():StartLookByTarget( ? )
+
+game.game:GetActivePlayer():StartLookByAngles( ? )
+
+game.game:GetActivePlayer():ChangeLookTarget( ? )
+
+game.game:GetActivePlayer():ChangeLookAngles( ? )
+
+game.game:GetActivePlayer():EndLook( ? )
+
+game.game:GetActivePlayer():SetLookStyle( ? )
+
+game.game:GetActivePlayer():TurnAt( ? )
+
+game.game:GetActivePlayer():TurnAtVec( ? )
+
+game.game:GetActivePlayer():TurnAtDir( ? )
+
+game.game:GetActivePlayer():SearchCover( ? )
+
+game.game:GetActivePlayer():Forget( ? )
+
+game.game:GetActivePlayer():SetAggressivity(0) (enums.AI_Aggressivity.OnAttack) (enums.AI_Aggressivity.HearGunshot) (enums.AI_Aggressivity.SeeEnemy) (enums.AI_Aggressivity.SeeEnemyWithWeapon)
+
+game.game:GetActivePlayer():GetAggressivity( ? )
+
+game.game:GetActivePlayer():SetVisible( ? )
+
+game.game:GetActivePlayer():SetRecognizeTime( ? )
+
+game.game:GetActivePlayer():GetRecognizeTime( ? )
+
+game.game:GetActivePlayer():SetRecognizeRange( ? )
+
+game.game:GetActivePlayer():GetRecognizeRange( ? )
+
+game.game:GetActivePlayer():SetFollowEmitter( ? )
+
+game.game:GetActivePlayer():GetFollowEmitter( ? )
+
+game.game:GetActivePlayer():SetMeleeSkillLevel( ? )
+
+game.game:GetActivePlayer():SetMeleeAttackLevel( ? )
+
+game.game:GetActivePlayer():SetMeleeBlockLevel( ? )
+
+game.game:GetActivePlayer():SetMeleeAggressivity( ? )
+
+game.game:GetActivePlayer():SetMeleeCounterBlockSkill( ? )
+
+game.game:GetActivePlayer():SetMeleeStamina( ? )
+
+game.game:GetActivePlayer():SetMeleeArchetype(“”) Collector_Tutorial,BlackJuggernaut,BlackWorker,TriadsFighter,TriadsFighterRR,PepeTutorial1,PepeTutorial2,Agile,AgileRR,Brute,BruteRR,Reznik,Brian1,Brian2,Loser,WongPei
+
+game.game:GetActivePlayer():SetMeleeEffect( ? )
+
+game.game:GetActivePlayer():SetMeleeEnableEvade( ? )
+
+game.game:GetActivePlayer():ClearMeleeEffect( ? )
+
+game.game:GetActivePlayer():ClearMeleeEffects( ? )
+
+game.game:GetActivePlayer():GetMeleeSkillLevel( ? )
+
+game.game:GetActivePlayer():GetMeleeAttackLevel( ? )
+
+game.game:GetActivePlayer():GetMeleeBlockLevel( ? )
+
+game.game:GetActivePlayer():GetMeleeAggressivity( ? )
+
+game.game:GetActivePlayer():GetMeleeCounterBlockSkill( ? )
+
+game.game:GetActivePlayer():GetIsOnGround( ? )
+
+game.game:GetActivePlayer():GetIsOpponentOnGround( ? )
+
+game.game:GetActivePlayer():GetMeleeOpponentGUID( ? )
+
+game.game:GetActivePlayer():ForcedDropWeapon( ? )
+
+game.game:GetActivePlayer():SetDamageMultiplier( ? )
+
+game.game:GetActivePlayer():SetBlockMultiplier( ? )
+
+game.game:GetActivePlayer():MeleePreferLights( ? )
+
+game.game:GetActivePlayer():MeleePreferHards( ? )
+
+game.game:GetActivePlayer():MeleePreferCounter( ? )
+
+game.game:GetActivePlayer():MeleePreferCounterCounter( ? )
+
+game.game:GetActivePlayer():ObstacleComboEnabled( ? )
+
+game.game:GetActivePlayer():ObstacleComboEvader( ? )
+
+game.game:GetActivePlayer():ObstacleComboSurvivor( ? )
+
+game.game:GetActivePlayer():FinishComboSurvivor( ? )
+
+game.game:GetActivePlayer():BigHitSurvivor( ? )
+
+game.game:GetActivePlayer():MeleeExitEnable( ? )
+
+game.game:GetActivePlayer():EnableMeleeGenericSpeech( ? )
+
+game.game:GetActivePlayer():DisableMeleeGenericSpeech( ? )
+
+game.game:GetActivePlayer():UseSoundScene( ? )
+
+game.game:GetActivePlayer():SetHumanColor(#) # = 0/…/9 couleur vetement
+
+game.game:GetActivePlayer():GetHumanColor( ? )
+
+game.game:GetActivePlayer():ShowModel(xx) xx = truefalse
+
+game.game:GetActivePlayer():IsModelVisible( ? )
+
+game.game:GetActivePlayer():SetDemigod(xx) xx = truefalse
+
+game.game:GetActivePlayer():SetStealthMove( ? )
+
+game.game:GetActivePlayer():IsStealthMove( ? )
+
+game.game:GetActivePlayer():IsCoverCrouch( ? )
+
+game.game:GetActivePlayer():EnableDragBody(xx) xx = truefalse
+
+game.game:GetActivePlayer():EnableStealthKill(xx) xx = truefalse
+
+game.game:GetActivePlayer():EnablePushByPlayer(xx) xx = truefalse
+
+game.game:GetActivePlayer():EnableBounceByPlayer(xx) xx = truefalse
+
+game.game:GetActivePlayer():SetMeleeResponsivity( ? )
+
+game.game:GetActivePlayer():SetAnimDeathTag( ? )
+
+game.game:GetActivePlayer():ResetAnimDeathTag( ? )
+
+game.game:GetActivePlayer():SetReactions(enums.HumanReaction.DISABLED,false,false) (enums.HumanReaction.DISABLED,false,true) (enums.HumanReaction.STEALTH,true,true) ???
+
+game.game:GetActivePlayer():GetReactions( ? )
+
+game.game:GetActivePlayer():StartWatchByTarget( ? )
+
+game.game:GetActivePlayer():StartWatchByDir( ? )
+
+game.game:GetActivePlayer():StopWatch( ? )
+
+game.game:GetActivePlayer():MimicFriend(true) ???
+
+game.game:GetActivePlayer():GetApproachPosDir( ? )
+
+game.game:GetActivePlayer():GetApproachCylPosDir( ? )
+
+game.game:GetActivePlayer():SetDrunk( ? )
+
+game.game:GetActivePlayer():EnableBloodParticles( ? )
+
+game.game:GetActivePlayer():ForceBloodPool( ? )
+
+game.game:GetActivePlayer():AnimationReset( ? )
+
+game.game:GetActivePlayer():CustomLockpick( ? )
+
+game.game:GetActivePlayer():Spawn( ? )
+
+ 
+
+ 
+
+class C_WrapperEntity : public C_ScriptWrapper — game.game:GetActivePlayer() or game.entitywrapper:GetEntityByName(“name_entity”)
+
+ 
+
+game.game:GetActivePlayer():Activate()
+
+game.game:GetActivePlayer():Deactivate( ? )
+
+game.game:GetActivePlayer():GameRestore()
+
+game.game:GetActivePlayer():GetGuid()
+
+game.game:GetActivePlayer():GetType()
+
+game.game:GetActivePlayer():IsActive( ? )
+
+game.game:GetActivePlayer():IsValid( ? )
+
+game.game:GetActivePlayer():RegisterToMessages(guid)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.DEATH)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.DAMAGE)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.ENTER_VEHICLE)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.LEAVE_VEHICLE)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.ANIM_NOTIFY)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.AI_CONTROL)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.ON_BOUNCE)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.ON_PUNCH)
+
+(guid, enums.EventType.ACTOR, enums.ActorMessages.SCRIPT)
+
+(guid, enums.EventType.ACTOR, enums.ActorMessages.ACTIVATE)
+
+(guid, enums.EventType.ACTORDETECTOR, enums.ActorDetectorMessages.ONENTER)
+
+(guid, enums.EventType.ACTORDETECTOR, enums.ActorDetectorMessages.ONLEAVE)
+
+(guid, enums.EventType.DOOR, enums.DoorMessages.OPENING)
+
+game.game:GetActivePlayer():UnregisterFromMessages(guid)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.DAMAGE)
+
+(guid, enums.EventType.HUMAN, enums.HumanMessages.LEAVE_VEHICLE)
+
+ 
+
+ 
+
+class C_WrapperEntityPos : public C_WrapperEntity — game.game:GetActivePlayer() or game.entitywrapper:GetEntityByName(“name_entity”)
+
+ 
+
+game.game:GetActivePlayer():GetRot()
+
+game.game:GetActivePlayer():GetPos()
+
+game.game:GetActivePlayer():GetDir()
+
+game.game:GetActivePlayer():SetPos(Math:newVector(xx,yy,zz)) (game.entitywrapper:GetEntityByName(“C_item”):GetPos())
+
+game.entitywrapper:GetEntityByName(“name_entity”):SetPos(Player:GetPos())
+
+game.game:GetActivePlayer():SetDir(Math:newVector(0,0,0)) -1 to 1
+
+game.entitywrapper:GetEntityByName(“name_entity”):SetDir(Player:GetDir())
+
+game.game:GetActivePlayer():SetRot(Math:newVector( ? ))
+
+game.game:GetActivePlayer():IsVisibleFromCamera( ? )
+
+ 
+
+ 
+
+class C_WrapperPlayer : public C_WrapperHuman
+
+ 
+
+game.game:GetActivePlayer():GetControlStyle()
+
+game.game:GetActivePlayer():SetControlStyle(0) (enums.ControlStyle.FREE) or (enums.ControlStyle.LOCKED)
+
+game.game:GetActivePlayer():AreControlsLocked( ? )
+
+game.game:GetActivePlayer():LockControls(xx,yy) xx = truefalse yy = truefalse
+
+game.game:GetActivePlayer():LockControlsToPlayAnim( ? )
+
+game.game:GetActivePlayer():SetControlStyleStr(“CS_DISTILLERY”)
+
+game.game:GetActivePlayer():GetControlStyleStr()
+
+game.game:GetActivePlayer():SetFightAbility(enums.FightAbility.COUNTER,false)(enums.FightAbility.COMBO,false) ???
+
+game.game:GetActivePlayer():SetFightControlStyle( ? ) EVADE_UNMASKED
+
+game.game:GetActivePlayer():SetFightHint( ? )
+
+game.game:GetActivePlayer():SetFightGrabTimeScale( ? )
+
+game.game:GetActivePlayer():IsUnderMeleeAttack( ? )
+
+game.game:GetActivePlayer():CheckHumanPresence( ? )
+
+ 
+
+ 
+
+class C_MafiaCameraModule
+
+ 
+
+game.cameramanager:GetPlayerMainCamera(0) (int index?)
+
+game.cameramanager:GetPlayerSmallCamera( ? )
+
+ 
+
+ 
+
+class C_GameCameraMafia
+
+ 
+
+game.cameramanager:GetPlayerMainCamera(0):LockSetActor(game.game:GetActivePlayer(),2)
+
+game.cameramanager:GetPlayerMainCamera(0):LockLookAt( ? )
+
+game.cameramanager:GetPlayerMainCamera(0):LockLookAtEntity(J,p,0.10000001192092896) J = game.entitywrapper: GetEntityByName (“Joe”) p = game.game: GetActivePlayer ()
+
+game.cameramanager:GetPlayerMainCamera(0):LockDialog( ? )
+
+game.cameramanager:GetPlayerMainCamera(0):Unlock(game.game:GetActivePlayer())
+
+game.cameramanager:GetPlayerMainCamera(0):SimpleShake(1,5,10) (float speed, float strength, float duration)
+
+game.cameramanager:GetPlayerMainCamera(0):SetCameraRotation(Player:GetPos() + Player:GetDir() * 10)
+
+Vito:SetControlStyle(enums.ControlStyle.LOCKED)
+
+cam = game.cameramanager:GetPlayerMainCamera(0)
+
+cam:LockControl(true, false)
+
+cam:SetCameraRotation(Vito:GetPos() + Vito:GetDir() * 10)
+
+game.cameramanager:GetPlayerMainCamera(0):EnableFPV(game.game:GetActivePlayer(),true)game.game:GetActivePlayer():ShowModel(false) in car
+
+game.cameramanager:GetPlayerMainCamera(0):EnableFPV(game.game:GetActivePlayer(),false)game.game:GetActivePlayer():ShowModel(true) out car
+
+game.cameramanager:GetPlayerMainCamera(0):LockControl( ? )
+
+game.cameramanager:GetPlayerMainCamera(0):SetSensitivityMultiplier(2) (float multiplier)
+
+ 
+
+ 
+
+class C_WrapperDoor : public C_WrapperActorDeform
+
+ 
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):Lock( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):AILock( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):Unlock( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):AIUnlock( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):IsLocked( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):StartLockpick( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):StopLockpick( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):IsLockpicking( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):Kick( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):Open(game.game:GetActivePlayer():GetPos(),true)
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):Close()
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):ToggleOpen( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):IsClosed( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):EnableAction()
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):DisableAction()
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):Activate()
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):Deactivate()
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):PlayAnimNoResistance( ? )
+
+game.entitywrapper:GetEntityByName(“name_Door_entity”):StopAnim( ? )
+
+ 
+
+ 
+
+class C_WrapperCrashObject : public C_WrapperActorDeform
+
+ 
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):Explode( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):LightEntityLink( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):Hide( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):Show( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):GetModelTranslate( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):PlayAnim( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):PlayAnimNoResistance( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):PlayAnimLoop( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):PlayAnimNoResistanceLoop( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):StopAnim( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):PlayBlinkAnim( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):StopBlinkAnim( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):EnableLight( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):IsLightingEnabled( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):SetCrashObjectColor( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):GetCrashObjectColor( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):GetTruePos( ? )
+
+game.entitywrapper:GetEntityByName(“name_CrashObject_entity”):SetManagerImmunity( ? )
+
+ 
+
+ 
+
+class C_GameGfxEnvEffModule
+
+ 
+
+game.gfx:SetGarbageFlyingOn( ? )
+
+game.gfx:SetWeatherDateTime( ? )
+
+game.gfx:SetWeatherTemplate(“name_weather”) DTFreeRideDay DTFreeRideDayRain DTFreerideNight DTFreeRideDaySnow DTFreeRideDayWinter DTFreeRideNightSnow
+
+game.gfx:IsTheWeatherLike( ? )
+
+game.gfx:GetDayTime( ? )
+
+ 
+
+ 
+
+class C_ModelHighlightingModuleScriptWrapper
+
+ 
+
+game.highlighting:AddHighlighting(game.entitywrapper:GetEntityByName(“name_entity”))
+
+game.highlighting:RemoveHighlighting(game.entitywrapper:GetEntityByName(“name_entity”))
+
+game.highlighting:SetPrinterSpeed( ? )
+
+ 
+
+ 
+
+class C_SpeechSlotManager
+
+ 
+
+game.speech:LoadScriptDistrict(“joe”) ???
+
+game.speech:UnLoadScriptDistrict( ? )
+
+game.speech:LoadDistrictVarious(“APDGangBlack”)(“APDGangIrish”)(“APDGangItalian”)(“APDGangGreaser”)
+
+(“APDCivMale”)(“APDCivFemale”)(“APDCivBlack”)(“APDCivChinese”)(“APDCivIrish”)(“APDCivItalian”)
+
+game.speech:UnLoadDistrictVarious(“APDGangBlack”)(“APDGangIrish”)(“APDGangItalian”)(“APDGangGreaser”)
+
+(“APDCivMale”)(“APDCivFemale”)(“APDCivBlack”)(“APDCivChinese”)(“APDCivIrish”)(“APDCivItalian”)
+
+game.speech:IsDistrictVariousLoaded(“district”) ???
+
+game.speech:LoadStage(60) ???
+
+ 
+
+ 
+
+class C_WrapperLift : public C_WrapperActorDeform
+
+ 
+
+game.entitywrapper:GetEntityByName(“name_lift_entity”):SetFloor(#) #=etage
+
+game.entitywrapper:GetEntityByName(“name_lift_entity”):GetFloor()
+
+game.entitywrapper:GetEntityByName(“name_lift_entity”):EnableActions()
+
+ 
+
+ 
+
+class C_WrapperLightEntity : public C_WrapperActor
+
+ 
+
+game.entitywrapper:GetEntityByName(“name_light_entity”):SetOn( ? )
+
+game.entitywrapper:GetEntityByName(“name_light_entity”):SetOff( ? )
+
+game.entitywrapper:GetEntityByName(“name_light_entity”):IsOn( ? )
+
+ 
+
+ 
+
+class C_WrapperParticle : public C_WrapperEntityPos
+
+ 
+
+game.entitywrapper:GetEntityByName(“name_Particle_entity”):Run( ? )
+
+game.entitywrapper:GetEntityByName(“name_Particle_entity”):Stop( ? )
+
+game.entitywrapper:GetEntityByName(“name_Particle_entity”):StopImmediately( ? )
+
+ 
+
+ 
+
+class C_WrapperRadio : public C_WrapperSoundSettings
+
+ 
+
+game.entitywrapper:GetEntityByName(“name_Radio_entity”):SetStatusOn()
+
+game.entitywrapper:GetEntityByName(“name_Radio_entity”):SetStatusOff()
+
+game.entitywrapper:GetEntityByName(“name_Radio_entity”):GetStatus()
+
+game.entitywrapper:GetEntityByName(“name_Radio_entity”):ChangeStation( ? )
+
+game.entitywrapper:GetEntityByName(“name_Radio_entity”):ChangeProgram( ? )
+
+game.entitywrapper:GetEntityByName(“name_Radio_entity”):ChangePlaylist( ? )
+
+ 
+
+ 
+
+class C_WrapperTelephone : public C_WrapperCrashObject
+
+ 
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):StartRinging( ? ) xx = truefalse
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):StopRinging( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):ShowMenu( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):IsRinging( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):IsCalling( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):StartSpeech( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):Pick( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):Hang( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):ChooseRandomNPCNumber( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):InterruptCall( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):OnSpeechReady( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):OnSpeechEnded( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):DoTalk( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):DoWait( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):LoadSpeech( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):UnloadSpeech( ? )
+
+game.entitywrapper:GetEntityByName(“name_Telephone_entity”):WaitForDial( ? )
+
+ 
+
+ 
+
+class C_WrapperJukeBox : public C_WrapperSoundSettings
+
+ 
+
+game.entitywrapper:GetEntityByName(“name_JukeBox_entity”):PlaySong( ? )
+
+ 
+
+ 
+
+class C_GarageManager
+
+ 
+
+game.garage:GetMaxGaragePlaces()
+
+game.garage:SetMaxGaragePlaces(##)
+
+game.garage:GetPlayersCar() a voir avec game.entitywrapper:GetEntityByGUID(game.garage:GetPlayersCar())
+
+game.garage:HasCar( ? )
+
+game.garage:AddCar( ? )
+
+game.garage:RemoveCar( ? )
+
+game.garage:AbandonCar( ? )
+
+game.garage:KeepSpawnedOnlyPlayersCar( ? )
+
+game.garage:DespawnAll()
+
+game.garage:CheatAddCar(“name_Car”,true)
+
+game.garage:CheatAddCarColor( ? )
+
+game.garage:CheatAddCars(true) add all Car
+
+game.garage:CheatAbandonCars( ? )
+
+ 
+
+ 
+
+class C_WrapperActorDeform : public C_WrapperActor
+
+ 
+
+??? ?:Restore( ? )
+
+??? ?:RegisterEvents(true)
+
+??? ?:GetPartCount( ? )
+
+??? ?:GetPartName( ? )
+
+??? ?:GetPartVersionCount( ? )
+
+??? ?:GetPartVersion( ? )
+
+??? ?:GetPartEnergy( ? )
+
+??? ?:GetPartHitpoints( ? )
+
+??? ?:SetPartEnergy( ? )
+
+??? ?:SetPartHitpoints( ? )
+
+??? ?:GetJointCount( ? )
+
+??? ?:GetJointName( ? )
+
+??? ?:GetJointVersionCount( ? )
+
+??? ?:GetJointVersion( ? )
+
+??? ?:SetJointVersion( ? )
+
+??? ?:PausePhysics( ? )
+
+??? ?:IsPausedPhysics( ? )
+
+??? ?:SetFullResistance( ? )
+
+??? ?:GetFullResistance( ? )
+
+??? ?:SetDynamicOff( ? )
+
+??? ?:IsDynamicOff( ? )
+
+??? ?:GetPartByName( ? )
+
+??? ?:GetJointByName( ? )
+
+??? ?:BlockDrainEnergy( ? )
+
+??? ?:BlockSelfJointVersionChange( ? )
+
+??? ?:BlockEffects( ? )
+
+??? ?:SetOffPart( ? )
+
+??? ?:SetOnPart( ? )
+
+??? ?:SetOffPartNoPhys( ? )
+
+??? ?:SetOnPartNoPhys( ? )
+
+??? ?:SetImpulse( ? )
+
+??? ?:SetImpulse( ? )
+
+ 
+
+ 
+
+class C_WrapperActorAction : public C_ScriptWrapper
+
+ 
+
+??? ?:GetActionType( ? )
+
+??? ?:SetTextId( ? )
+
+??? ?:GetOwner( ? )
+
+??? ?:Enable( ? )
+
+??? ?:Disable( ? )
+
+??? ?:SetAutouse( ? )
+
+??? ?:SetLockRange( ? )
+
+??? ?:IsValid( ? )
+
+??? ?:SetControlIdentifier( ? )
+
+??? ?:GetControlIdentifier( ? )
+
+??? ?:GetControlIdentifierHold( ? )
+
+??? ?:SetInVehicleAction( ? )
+
+??? ?:GetInVehicleAction( ? )
+
+??? ?:SetInCoverAction( ? )
+
+??? ?:GetInCoverAction( ? )
+
+??? ?:SetInStealthAction( ? )
+
+??? ?:GetInStealthAction( ? )
+
+??? ?:SetInDraggingAction( ? )
+
+??? ?:GetInDraggingAction( ? )
+
+??? ?:GetAiPos( ? )
+
+??? ?:GetAiDir( ? )
+
+ 
+
+ 
+
+class C_ScriptGameMachineWrapper : public C_ScriptMachineWrapper
+
+ 
+
+base.ScriptMachine:getScriptGuid( ? )
+
+base.ScriptMachine:ComposeAnd( ? )
+
+base.ScriptMachine:ComposeOr( ? )
+
+base.ScriptMachine:ComposeNeg( ? )
+
+base.ScriptMachine:SetEvent( ? )
+
+base.ScriptMachine:PostMultiMessage( ? )
+
+base.ScriptMachine:PostMessage( ? )
+
+base.ScriptMachine:RegisterScriptForMachineMessages( ? )
+
+base.ScriptMachine:UnregisterScriptFromMachineMessages( ? )
+
+base.ScriptMachine:PostMachineMessage( ? )
+
+base.ScriptMachine:UnregisterFromAllMessages( ? )
+
+base.ScriptMachine:CreateSyncObject( ? )
+
+base.ScriptMachine:print( ? )
+
+base.ScriptMachine:clear( ? )
+
+ 
+
+ 
+
+class C_Quest
+
+ 
+
+??? ?:GetState( ? )
+
+??? ?:SetState( ? )
+
+??? ?:SetDescriptionTextId( ? )
+
+??? ?:SetTime( ? )
+
+??? ?:SetName( ? )
+
+??? ?:SetAwardMoney( ? )
+
+??? ?:SetAwardCustomTextId( ? )
+
+??? ?:AddObjective( ? )
+
+??? ?:FindObjectiveByName( ? )
+
+??? ?:AddMissionCriticalHuman( ? )
+
+??? ?:RemoveMissionCriticalHuman( ? )
+
+??? ?:AddMissionCriticalCar( ? )
+
+??? ?:RemoveMissionCriticalCar( ? )
+
+ 
+
+ 
+
+class C_LuaVector
+
+ 
+
+Math:newVector():zero( ? )
+
+Math:newVector():dotProduct( ? )
+
+Math:newVector():set(0,0,0)
+
+Math:newVector():setVec( ? )
+
+Math:newVector():get( ? )
+
+Math:newVector():magnitude( ? )
+
+Math:newVector():magnitude2( ? )
+
+Math:newVector():normalize( ? )
+
+ 
+
+ 
+
+class C_ScriptMachineWrapper
+
+ 
+
+??? ?:callScript( ? )
+
+??? ?:createScript( ? )
+
+??? ?:markScriptForAutodestroy( ? )
+
+??? ?:require( ? )
+
+??? ?:getRegistry( ? )
+
+??? ?:GetTime( ? )
+
+ 
+
+ 
+
+class C_ScriptWrapperPhoneBook
+
+ 
+
+game.phonebook:AddNumber( ? )
+
+game.phonebook:AddHiddenNumber( ? )
+
+game.phonebook:RemoveNumber( ? )
+
+game.phonebook:RemoveNumberByTextId( ? )
+
+game.phonebook:Clear( ? )
+
+game.phonebook:ContainsNumber( ? )
+
+ 
+
+ 
+
+ 
+
+[align=center:10d3iy6n]Download: Divers LUA command files (28.61 Mo)[/align:10d3iy6n]
+
+ 
+
+[hr:10d3iy6n][/hr:10d3iy6n]
+
+[align=center:10d3iy6n]Some useful links.[/align:10d3iy6n]
+
+[align=center:10d3iy6n]But attention, it’s the info on the true LUA, and not on the LUA made in 2K Game.[/align:10d3iy6n]
+
+[align=center:10d3iy6n]http://lua-users.org/wiki/TutorialDirectory[/align:10d3iy6n]
+
+[align=center:10d3iy6n]http://www.luteus.biz/Download/LoriotPro_Doc/LUA/LUA_Training_FR/Introduction_Programmation.html[/align:10d3iy6n]
+
+[hr:10d3iy6n][/hr:10d3iy6n]
+
+ 
+
+DelayBuffer Command
+
+ 
+
+DelayBuffer:Insert(function(l_1_0) xxxxx end,{l_1_0},250,1,false)
+xxxxx = your command
+
+250 = delay (millisecond) before activation of the command
+
+1 = number of times to repeat the fonction
+
+ 
+
+Test to understand the function “DelayBuffer”:
+
+DelayBuffer:Insert(function(l_1_0)game.game:SaveGame(1) end,{l_1_0},10000,10,false)
+a backup is performed every 10 second (10000 milli) for10 times.
