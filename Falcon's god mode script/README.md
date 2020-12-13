@@ -7,7 +7,7 @@ How to install?
 
 
 Features:
-- Toggle god mode on and off.
+- Flexible script allows you to toggle god mode on and off without modifications.
 - Well coded.
 
 Known bugs
