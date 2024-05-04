@@ -88,6 +88,7 @@ local mafia_2_weapons = {
 
 function AddWeapon( WeaponID, Ammo )
     game.game:GetActivePlayer():InventoryAddWeapon( WeaponID, Ammo )
+    game.game:GetActivePlayer():InventoryReload( WeaponID, Ammo )
 end
 
 function giveGuns()
